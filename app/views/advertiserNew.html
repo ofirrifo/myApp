@@ -1,11 +1,22 @@
 <div class="new-advertiser-container">
+
+  <h1>Advertiser</h1>
+  <hr/>
+
   <form  novalidate="">
+
+    <!--Advertiser ID-->
+    <div ng-if=":: advertiserCtrl.advertiser.id">
+      <label for="advertiser_name" class="normal-label advertiser-form-label">ID</label>
+      <label ng-bind=":: advertiserCtrl.advertiser.id"></label>
+    </div>
 
     <!--Advertiser Name-->
     <div>
       <label for="advertiser_name" class="mandatory-label advertiser-form-label">Name</label>
       <input
         type="text"
+        class="advertiser-input-width"
         id="advertiser_name"
         ng-model="advertiserCtrl.advertiser.name"
         validation-field-required="true"
@@ -13,33 +24,38 @@
         placeholder="Enter advertiser name"/>
     </div>
 
-
     <!--Advertiser Description-->
     <div>
-      <label for="advertiser_description" class="mandatory-label advertiser-form-label">Description</label>
-      <input
-        type="url"
-        id="advertiser_description"
-        ng-model="advertiserCtrl.advertiser.description"
-        validation-field-required="true"
-        placeholder="Enter advertiser description"/>
+      <label class="mandatory-label advertiser-form-label description-label">Description</label>
+      <div ui-ace="advertiserCtrl.decriptionEditorOptions" ng-model="advertiserCtrl.advertiser.description"></div>
     </div>
 
     <!--Advertiser Link-->
     <div>
       <label for="advertiser_link" class="mandatory-label advertiser-form-label">Link</label>
       <input
-        type="text"
+        type="url"
+        class="advertiser-input-width"
         id="advertiser_link"
         ng-model="advertiserCtrl.advertiser.link"
         validation-dynamically-defined="locallyDefinedValidations"
         placeholder="Enter advertiser link"/>
     </div>
 
+    <div ng-if=":: advertiserCtrl.advertiser.id">
+      <label for="advertiser_name" class="normal-label advertiser-form-label">Created at</label>
+      <label ng-bind=":: advertiserCtrl.advertiser.uiCreatedAt"></label>
+    </div>
+
+    <div ng-if=":: advertiserCtrl.advertiser.id">
+      <label for="advertiser_name" class="normal-label advertiser-form-label">Updated at</label>
+      <label ng-bind=":: advertiserCtrl.advertiser.uiUpdatedAt"></label>
+    </div>
+
   </form>
 
-  <footer class="button-strip">
-    <button type="button"  class="btn btn-primary save-button" ng-click="advertiserCtrl.onSaveClick()">Save</button>
+  <footer class="button-strip" >
+    <button type="button" class="btn btn-primary save-button" ng-click="advertiserCtrl.onSaveClick()">Save</button>
   </footer>
 
 </div>

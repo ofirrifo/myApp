@@ -14,7 +14,8 @@ angular
     'toaster',
     'ngAnimate',
     'ui.grid',
-    'directives.customvalidation.customValidationTypes'
+    'directives.customvalidation.customValidationTypes',
+    'ui.ace'
   ])
   .config(function ($routeProvider) {
     $routeProvider

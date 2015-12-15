@@ -111,33 +111,29 @@ $mid-gray-color: #b6bec9;
 $dark-gray-color: #6b7587;
 $error-color: #d13d3b;
 
-
-
 /**
   Navbar
 **/
-.navbar-default{
+.navbar-default {
   background-color: $secondary-color;
   border-radius: 0;
 
-
-  ul{
+  ul {
     display: flex;
     align-items: center;
   }
 
-  .navbar-nav > li > a{
+  .navbar-nav > li > a {
     color: $white-color;
-    &:hover{
+    &:hover {
       color: $white-color;
       opacity: 0.7;
     }
-    &:focus{
+    &:focus {
       color: $white-color;
     }
   }
 }
-
 
 /**
   Advertisers
@@ -147,7 +143,7 @@ $error-color: #d13d3b;
   height: 90%;
 }
 
-.advertisers-container{
+.advertisers-container {
   position: absolute;
   top: 80px;
   left: 0;
@@ -169,12 +165,23 @@ $error-color: #d13d3b;
 
   .advertiser-form-label {
     width: 100px;
+    color: $dark-gray-color;
+  }
+
+  .normal-label::before {
+    content: "*";
+    opacity: 0;
+    margin-right: 5px;
   }
 
   .mandatory-label::before {
     content: "*";
     color: red;
     margin-right: 5px;
+  }
+
+  .description-label{
+    float: left;
   }
 
   .CustomValidationError {
@@ -192,12 +199,24 @@ $error-color: #d13d3b;
     padding: 0 10px;
   }
 
-  .save-button{
+  .save-button {
     float: right;
     background-color: $third-color;
     color: $secondary-color;
     border-radius: 0;
   }
 
+  .advertiser-input-width {
+    width: 400px;
+  }
+
+  .ace_editor {
+    display: inline-block;
+    width: 92%;
+    height: 200px;
+    position: relative;
+    left: 4px;
+  }
 }
+
 

@@ -12,9 +12,9 @@
   angular.module('advertiserApp')
     .service('advertiserRestService', advertiserRestService);
 
-  advertiserRestService.$inject = ['$http', '$q', 'alertService'];
+  advertiserRestService.$inject = ['$http', '$q', 'alertService','advertiserCommonService'];
 
-  function advertiserRestService($http, $q, alertService) {
+  function advertiserRestService($http, $q, alertService, advertiserCommonService) {
     var self = this;
     var baseUrl = 'http://localhost:3000/api/';
 
@@ -61,7 +61,7 @@
 
     self.saveAdvertiser = function (advertiser) {
       var deferred = $q.defer();
-      var method = self.isEditMode(advertiser) ? "PUT":"POST";
+      var method = advertiserCommonService.isEditMode(advertiser) ? "PUT":"POST";
       var url = baseUrl + 'advertiser';
 
       $http({
@@ -88,10 +88,5 @@
 
       return deferred.promise;
     };
-
-    self.isEditMode = function(advertiser){
-      return advertiser.id !== undefined && advertiser.id !== null
-    }
-
   }
 })(angular);
