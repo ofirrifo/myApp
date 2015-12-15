@@ -10,12 +10,10 @@
  */
 angular
   .module('advertiserApp', [
-    'restangular',
     'ngRoute',
     'toaster',
     'ngAnimate',
     'ui.grid',
-    'ngMaterial',
     'directives.customvalidation.customValidationTypes'
   ])
   .config(function ($routeProvider) {
