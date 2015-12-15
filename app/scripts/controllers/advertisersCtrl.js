@@ -1,14 +1,19 @@
-'use strict';
+(function () {
+  'use strict';
 
-/**
- * @ngdoc function
- * @name advertiserApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the advertiserApp
- */
-angular.module('advertiserApp')
-  .controller('AdvertisersCtrl', ['$scope', 'advertiserRestService', function ($scope, advertiserRestService) {
+  /**
+   * @ngdoc function
+   * @name advertiserApp.controller:MainCtrl
+   * @description
+   * # MainCtrl
+   * Controller of the advertiserApp
+   */
+  angular.module('advertiserApp')
+    .controller('AdvertisersCtrl', AdvertisersCtrl);
+
+  AdvertisersCtrl.$inject = ['advertiserRestService'];
+
+  function AdvertisersCtrl(advertiserRestService) {
 
     var vm = this;
     vm.gridOptions = {};
@@ -25,4 +30,6 @@ angular.module('advertiserApp')
       vm.gridOptions.data = advertisers;
     });
 
-  }]);
+  }
+
+})();

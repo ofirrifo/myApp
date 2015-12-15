@@ -1,18 +1,23 @@
-'use strict';
+(function (angular) {
+  'use strict';
 
-/**
- * @ngdoc function
- * @name advertiserApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the advertiserApp
- */
-angular.module('advertiserApp')
-  .controller('AdvertiserCtrl', ['$scope', 'advertiserEntityFactoryService','advertiserRestService', function ($scope, advertiserEntityFactoryService,advertiserRestService) {
+  /**
+   * @ngdoc function
+   * @name advertiserApp.controller:AboutCtrl
+   * @description
+   * # AboutCtrl
+   * Controller of the advertiserApp
+   */
+  angular.module('advertiserApp')
+    .controller('AdvertiserCtrl', AdvertiserCtrl);
+
+  AdvertiserCtrl.$inject = ['$scope', 'advertiserEntityFactoryService', 'advertiserRestService'];
+
+  function AdvertiserCtrl($scope, advertiserEntityFactoryService, advertiserRestService) {
     var vm = this;
     vm.advertiser = advertiserEntityFactoryService.createAdvertiser();
 
-    vm.onSaveClick = function(){
+    vm.onSaveClick = function () {
       advertiserRestService.saveAdvertiser(vm.advertiser);
     };
 
@@ -24,5 +29,6 @@ angular.module('advertiserApp')
 
         }
       }
-    ]
-  }]);
+    ];
+  }
+})(angular);
