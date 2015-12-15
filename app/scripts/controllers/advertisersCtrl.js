@@ -11,20 +11,12 @@
   angular.module('advertiserApp')
     .controller('AdvertisersCtrl', AdvertisersCtrl);
 
-  AdvertisersCtrl.$inject = ['advertiserRestService'];
+  AdvertisersCtrl.$inject = ['advertiserRestService','advertisersGridConst'];
 
-  function AdvertisersCtrl(advertiserRestService) {
+  function AdvertisersCtrl(advertiserRestService, advertisersGridConst) {
 
     var vm = this;
-    vm.gridOptions = {};
-    vm.gridOptions.columnDefs = [
-      {name: 'id'},
-      {name: 'name'},
-      {name: 'description'},
-      {name: 'link'},
-      {name: 'createdAt'},
-      {name: 'updatedAt'}
-    ];
+    vm.gridOptions = advertisersGridConst.gridOptions;
 
     advertiserRestService.getAdvertisers().then(function (advertisers) {
       vm.gridOptions.data = advertisers;

@@ -1,7 +1,7 @@
 /**
  * Created by ofir on 12/13/2015.
  */
-(function () {
+(function (angular) {
   'use strict';
 
   /**
@@ -24,8 +24,4 @@
         }
       }
     });
-
-
-
-
-})();
+})(angular);

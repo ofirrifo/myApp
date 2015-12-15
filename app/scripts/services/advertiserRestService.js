@@ -25,9 +25,6 @@
         method: 'GET',
         url: baseUrl + 'advertisers'
       }).then(function successCallback(advertisers) {
-        alertService.addSuccess({
-          title: 'Success get advertisers'
-        });
         deferred.resolve(advertisers.data);
       }, function errorCallback(error) {
         alertService.addError({
