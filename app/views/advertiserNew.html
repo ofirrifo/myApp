@@ -1,0 +1,47 @@
+<div class="new-advertiser-container">
+  <form  novalidate="">
+
+    <!--Advertiser Name-->
+    <div>
+      <label for="advertiser_name" class="mandatory-label advertiser-form-label">Name</label>
+      <input
+        type="text"
+        id="advertiser_name"
+        ng-model="advertiserCtrl.advertiser.name"
+        validation-field-required="true"
+        validation-min-length="3"
+        placeholder="Enter advertiser name"/>
+    </div>
+
+
+    <!--Advertiser Description-->
+    <div>
+      <label for="advertiser_description" class="mandatory-label advertiser-form-label">Description</label>
+      <input
+        type="url"
+        id="advertiser_description"
+        ng-model="advertiserCtrl.advertiser.description"
+        validation-field-required="true"
+        placeholder="Enter advertiser description"/>
+    </div>
+
+    <!--Advertiser Link-->
+    <div>
+      <label for="advertiser_link" class="mandatory-label advertiser-form-label">Link</label>
+      <input
+        type="text"
+        id="advertiser_link"
+        ng-model="advertiserCtrl.advertiser.link"
+        validation-dynamically-defined="locallyDefinedValidations"
+        placeholder="Enter advertiser link"/>
+    </div>
+
+  </form>
+
+  <footer class="button-strip">
+    <button type="button"  class="btn btn-primary save-button" ng-click="advertiserCtrl.onSaveClick()">Save</button>
+  </footer>
+
+</div>
+
+
