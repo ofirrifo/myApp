@@ -19,6 +19,10 @@
 
     self.isEditMode = function (advertiser) {
       return advertiser.id !== undefined && advertiser.id !== null
-    }
+    };
+
+    self.formatDateAndTime = function(date){
+      return moment(date).format('YYYY-MM-DD HH:mm:ss');
+    };
   }
 })(angular);

@@ -24,7 +24,7 @@ angular
         controller: 'AdvertisersCtrl',
         controllerAs: 'advertisersCtrl'
       })
-      .when('/advertiser', {
+      .when('/advertiser/:id', {
         templateUrl: 'views/advertiserNew.html',
         controller: 'AdvertiserCtrl',
         controllerAs: 'advertiserCtrl'

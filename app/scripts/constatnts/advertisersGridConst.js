@@ -12,15 +12,19 @@
   angular.module('advertiserApp')
     .constant('advertisersGridConst', {
       gridOptions:{
-        columnSetup:[
-          {name: 'id'},
+        columnDefs:[
+          {name: 'id',width:60},
+          {name: 'editAdvertiser',
+            width:120,
+            cellTemplate: '<div class="ui-grid-cell-contents">' +
+            '<button class="btn btn-default btn-xs" type="button" ng-click="grid.appScope.advertisersCtrl.onEditClick(row)">Edit</button>' +
+            '</div>' },
           {name: 'name'},
           {name: 'description'},
           {name: 'link'},
-          {name: 'createdAt'},
-          {name: 'updatedAt'}
+          {name: 'uiCreatedAt'},
+          {name: 'uiUpdatedAt'}
         ]
       }
-
     });
 })(angular);

@@ -25,8 +25,8 @@
 
     advertiserRestService.getAdvertisers().then(function (advertisers) {
       vm.advertiser = advertisers[0];
-      vm.advertiser.uiCreatedAt = moment(vm.advertiser.createddAt).format('YYYY-MM-DD HH:mm:ss');
-      vm.advertiser.uiUpdatedAt = moment(vm.advertiser.updatedAt).format('YYYY-MM-DD HH:mm:ss');
+      vm.advertiser.uiCreatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.createddAt);
+      vm.advertiser.uiUpdatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.updatedAt);
     });
 
     vm.isEditMode = advertiserCommonService.isEditMode(vm.advertiser);
