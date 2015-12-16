@@ -11,10 +11,12 @@
   angular.module('advertiserApp')
     .controller('AdvertiserCtrl', AdvertiserCtrl);
 
-  AdvertiserCtrl.$inject = ['$scope', 'advertiserEntityFactoryService', 'advertiserRestService', 'advertiserCommonService'];
+  AdvertiserCtrl.$inject = ['$scope', 'advertiserEntityFactoryService', 'advertiserRestService', 'advertiserCommonService','$routeParams'];
 
-  function AdvertiserCtrl($scope, advertiserEntityFactoryService, advertiserRestService, advertiserCommonService) {
+  function AdvertiserCtrl($scope, advertiserEntityFactoryService, advertiserRestService, advertiserCommonService,$routeParams) {
     var vm = this;
+    var id = $routeParams.id;
+
     vm.advertiser = advertiserEntityFactoryService.createAdvertiser();
     vm.decriptionEditorOptions = {
       useWrapMode : true,
