@@ -39,6 +39,7 @@ module.exports = function(config) {
       'bower_components/angular-ui-form-validation/dist/angular-ui-form-validation.js',
       'bower_components/moment/moment.js',
       'bower_components/angular-ui-ace/ui-ace.js',
+      'bower_components/lodash/lodash.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

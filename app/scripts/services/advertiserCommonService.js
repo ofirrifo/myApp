@@ -17,8 +17,8 @@
   function advertiserCommonService() {
     var self = this;
 
-    self.isEditMode = function (advertiser) {
-      return advertiser.id !== undefined && advertiser.id !== null
+    self.isEditMode = function (id) {
+      return id !== "new";
     };
 
     self.formatDateAndTime = function(date){

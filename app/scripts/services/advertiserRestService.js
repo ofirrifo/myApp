@@ -12,11 +12,12 @@
   angular.module('advertiserApp')
     .service('advertiserRestService', advertiserRestService);
 
-  advertiserRestService.$inject = ['$http', '$q', 'alertService','advertiserCommonService'];
+  advertiserRestService.$inject = ['$http', '$q', 'alertService'];
 
-  function advertiserRestService($http, $q, alertService, advertiserCommonService) {
-    var self = this;
-    var baseUrl = 'http://localhost:3000/api/';
+  function advertiserRestService($http, $q, alertService) {
+    var self = this,
+    baseUrl = 'http://localhost:3000/api/';
+
 
     self.getAdvertisers = function () {
       var deferred = $q.defer();
@@ -28,7 +29,7 @@
         deferred.resolve(advertisers.data);
       }, function errorCallback(error) {
         alertService.addError({
-          title: 'Fail get advertisers',
+          title: 'Fail to get advertisers',
           body: error.data
         });
         deferred.reject();
@@ -40,29 +41,37 @@
     self.getAdvertiserById = function (advertiserId) {
       var deferred = $q.defer();
 
-      $http({
-        method: 'GET',
-        url: baseUrl + 'advertiser/' + advertiserId
-      }).then(function successCallback(advertiser) {
-        alertService.addSuccess({
-          title: 'Success get advertiser'
-        });
+      //TODO - Ofir check why it not work
+      //$http({
+      //  method: 'GET',
+      //  url: baseUrl + 'advertiser/' + advertiserId
+      //}).then(function successCallback(advertiser) {
+      //  deferred.resolve(advertiser);
+      //}, function errorCallback(error) {
+      //  alertService.addError({
+      //    title: 'Fail to get advertiser',
+      //    body: error.data
+      //  });
+      //  deferred.reject();
+      //});
+
+      // This is temp workaround
+      self.getAdvertisers().then(function (advertisers) {
+        var advertiser = _.find(advertisers, {id: parseInt(advertiserId)});
         deferred.resolve(advertiser);
-      }, function errorCallback(error) {
-        alertService.addError({
-          title: 'Fail get advertiser',
-          body: error.data
-        });
-        deferred.reject();
       });
+
 
       return deferred.promise;
     };
 
-    self.saveAdvertiser = function (advertiser) {
+    self.saveAdvertiser = function (advertiser, isEditMode) {
       var deferred = $q.defer();
-      var method = advertiserCommonService.isEditMode(advertiser) ? "PUT":"POST";
+      var method = isEditMode ? "PUT":"POST";
       var url = baseUrl + 'advertiser';
+      if(method === "PUT"){
+        url += '/' + advertiser.id;
+      }
 
       $http({
         method: method,

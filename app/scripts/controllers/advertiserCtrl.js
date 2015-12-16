@@ -14,10 +14,23 @@
   AdvertiserCtrl.$inject = ['$scope', 'advertiserEntityFactoryService', 'advertiserRestService', 'advertiserCommonService','$routeParams'];
 
   function AdvertiserCtrl($scope, advertiserEntityFactoryService, advertiserRestService, advertiserCommonService,$routeParams) {
-    var vm = this;
-    var id = $routeParams.id;
+    var vm = this,
+    advertiserId = $routeParams.id;
 
-    vm.advertiser = advertiserEntityFactoryService.createAdvertiser();
+    vm.isEditMode = advertiserCommonService.isEditMode(advertiserId);
+
+    if(vm.isEditMode){
+      advertiserRestService.getAdvertiserById(advertiserId).then(function (advertiser) {
+        vm.advertiser = advertiser;
+        vm.advertiser.uiCreatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.createdAt);
+        vm.advertiser.uiUpdatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.updatedAt);
+      });
+    }
+    else{
+      vm.advertiser = advertiserEntityFactoryService.createAdvertiser();
+    }
+
+
     vm.decriptionEditorOptions = {
       useWrapMode : true,
       showGutter: false,
@@ -25,17 +38,9 @@
       mode: 'markdown'
     };
 
-    advertiserRestService.getAdvertisers().then(function (advertisers) {
-      vm.advertiser = advertisers[0];
-      vm.advertiser.uiCreatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.createddAt);
-      vm.advertiser.uiUpdatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.updatedAt);
-    });
-
-    vm.isEditMode = advertiserCommonService.isEditMode(vm.advertiser);
-
 
     vm.onSaveClick = function () {
-      advertiserRestService.saveAdvertiser(vm.advertiser);
+      advertiserRestService.saveAdvertiser(vm.advertiser, vm.isEditMode);
     };
 
     $scope.locallyDefinedValidations = [
