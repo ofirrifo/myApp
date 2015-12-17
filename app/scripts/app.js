@@ -15,7 +15,8 @@ angular
     'ngAnimate',
     'ui.grid',
     'directives.customvalidation.customValidationTypes',
-    'ui.ace'
+    'ui.ace',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider

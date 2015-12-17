@@ -24,6 +24,8 @@
         vm.advertiser = advertiser;
         vm.advertiser.uiCreatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.createdAt);
         vm.advertiser.uiUpdatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.updatedAt);
+
+        $scope.$root.$broadcast('onOpenAdvertiser',{name:vm.advertiser.name, id:advertiserId});
       });
     }
     else{

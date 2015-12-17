@@ -5,7 +5,7 @@
 
   angular.
     module('advertiserApp')
-    .directive('lastAdvertiserDirective', lastAdvertiser);
+    .directive('lastAdvertiser', lastAdvertiser);
 
   function lastAdvertiser() {
     var directive = {
@@ -31,16 +31,17 @@
     var vm = this;
     vm.lastAdvertiser = [];
 
-    $scope.on('onOpenAdvertiser', addAdvertiserTo3Last);
+    $scope.$on('onOpenAdvertiser', addAdvertiserTo3Last);
 
-    function addAdvertiserTo3Last(dtoAdvertiser){
-      lastAdvertiser.unshift(dtoAdvertiser);
-      if(arr.length > 3){
-        lastAdvertiser.pop();
+    function addAdvertiserTo3Last(e, dtoAdvertiser){
+      if(!_.find(vm.lastAdvertiser,{id:dtoAdvertiser.id})){
+        vm.lastAdvertiser.unshift(dtoAdvertiser);
+        if(vm.lastAdvertiser.length > 3){
+          vm.lastAdvertiser.pop();
+        }
       }
     }
   }
-
 
 })(angular);
 

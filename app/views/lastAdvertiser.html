@@ -1,0 +1,5 @@
+<ul class="nav navbar-nav">
+  <li ng-repeat="advertiser in lastAdvertiserController.lastAdvertiser">
+    <a tooltip-trigger="mouseenter" tooltip-placement="bottom"  uib-tooltip="{{advertiser.name}}" class="truncate" ng-href="{{'#/advertiser/' +  advertiser.id}}">{{advertiser.name}}</a>
+  </li>
+</ul>
