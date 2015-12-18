@@ -71,3 +71,10 @@ grunt serve
 ## Miscellaneous
 
 1. Advertiser Backend (Server) Project listen on port 3000
+
+
+## Screenshot
+
+![Edit Advertiser View](https://github.com/ofirrifo/myApp/blob/master/screenshot-edit-advertiser.png "Edit Advertiser View")
+
+
