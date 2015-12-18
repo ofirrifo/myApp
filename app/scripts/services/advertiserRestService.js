@@ -41,26 +41,18 @@
     self.getAdvertiserById = function (advertiserId) {
       var deferred = $q.defer();
 
-      //TODO - Ofir check why it not work
-      //$http({
-      //  method: 'GET',
-      //  url: baseUrl + 'advertiser/' + advertiserId
-      //}).then(function successCallback(advertiser) {
-      //  deferred.resolve(advertiser);
-      //}, function errorCallback(error) {
-      //  alertService.addError({
-      //    title: 'Fail to get advertiser',
-      //    body: error.data
-      //  });
-      //  deferred.reject();
-      //});
-
-      // This is temp workaround
-      self.getAdvertisers().then(function (advertisers) {
-        var advertiser = _.find(advertisers, {id: parseInt(advertiserId)});
-        deferred.resolve(advertiser);
+      $http({
+        method: 'GET',
+        url: baseUrl + 'advertiser/' + advertiserId
+      }).then(function successCallback(advertiser) {
+        deferred.resolve(advertiser.data);
+      }, function errorCallback(error) {
+        alertService.addError({
+          title: 'Fail to get advertiser',
+          body: error.data
+        });
+        deferred.reject();
       });
-
 
       return deferred.promise;
     };
