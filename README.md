@@ -90,4 +90,7 @@ grunt serve
 
 ![New Advertiser View](https://github.com/ofirrifo/myApp/blob/master/screenshot-new-advertiser.png "New Advertiser View")
 
+## Video Demo
+---
 
+[Download Demo Video](https://github.com/ofirrifo/myApp/blob/master/advertiserDemoVideo.mp4?raw=true)
