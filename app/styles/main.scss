@@ -118,6 +118,15 @@ $mid-gray-color: #b6bec9;
 $dark-gray-color: #6b7587;
 $error-color: #d13d3b;
 
+.icon-logo {
+  position: relative;
+  background-image: url(../images/sprites.png);
+  background-position: -67px -449px;
+  width: 113px;
+  height: 36px;
+  bottom: 8px;
+}
+
 /**
   Navbar
 **/
