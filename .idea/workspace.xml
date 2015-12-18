@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="040a50b9-da77-472f-86f1-748f6202a96f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshot-edit-advertiser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshot-new-advertiser.png" />
-      <change type="DELETED" beforePath="C:\dev\campaings\screenshot-New-advertiser.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screenshot-advertisers.png" afterPath="$PROJECT_DIR$/screenshot-advertisers.png" />
+    <list default="true" id="040a50b9-da77-472f-86f1-748f6202a96f" name="Default" comment="update images and readme file&#10;">
+      <change type="MOVED" beforePath="C:\dev\campaings\screenshot-New-advertiser.png" afterPath="$PROJECT_DIR$/screenshot-new-advertiser.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/advertiserCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/advertiserCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="campaings.iws" />
@@ -33,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.831405" vertical-offset="1044" max-vertical-offset="1700">
-              <caret line="91" column="83" selection-start-line="91" selection-start-column="83" selection-end-line="91" selection-end-column="83" />
+            <state vertical-scroll-proportion="-11.285714" vertical-offset="1095" max-vertical-offset="1700">
+              <caret line="83" column="116" selection-start-line="83" selection-start-column="116" selection-end-line="83" selection-end-column="116" />
               <folding />
             </state>
           </provider>
@@ -46,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screenshot-new-advertiser.png" pinned="false" current-in-tab="false">
+      <file leaf-file-name="screenshot-new-advertiser.png" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/screenshot-new-advertiser.png">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -586,7 +582,7 @@
       <workItem from="1450366496592" duration="693000" />
       <workItem from="1450376803865" duration="2521000" />
       <workItem from="1450421016445" duration="659000" />
-      <workItem from="1450428483188" duration="20317000" />
+      <workItem from="1450428483188" duration="20426000" />
     </task>
     <task id="LOCAL-00001" summary="remove restangular&#10;remove angular-material">
       <created>1450197701879</created>
@@ -738,15 +734,21 @@
       <option name="project" value="LOCAL" />
       <updated>1450452232212</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update images and readme file&#10;">
+      <created>1450455362726</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1450455362726</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68165000" />
+    <option name="totallyTimeSpent" value="68274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -763,7 +765,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28341013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.266147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19914803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19914803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36636972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -841,7 +843,8 @@
     <MESSAGE value="impliment the parsed markdown into new edit advertiser view&#10;" />
     <MESSAGE value="update css&#10;" />
     <MESSAGE value="updated markdown file&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated markdown file&#10;" />
+    <MESSAGE value="update images and readme file&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="update images and readme file&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1231,11 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot-new-advertiser.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screenshot-edit-advertiser.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1248,12 +1246,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.831405" vertical-offset="1044" max-vertical-offset="1700">
-          <caret line="91" column="83" selection-start-line="91" selection-start-column="83" selection-end-line="91" selection-end-column="83" />
+        <state vertical-scroll-proportion="-11.285714" vertical-offset="1095" max-vertical-offset="1700">
+          <caret line="83" column="116" selection-start-line="83" selection-start-column="116" selection-end-line="83" selection-end-column="116" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot-new-advertiser.png">
+      <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>

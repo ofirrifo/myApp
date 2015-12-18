@@ -79,9 +79,9 @@ grunt serve
 ## Screenshot
 ---
 
-### Advertisers list View
+### Advertisers List View
 
-![Advertisers View](https://github.com/ofirrifo/myApp/blob/master/screenshot-advertisers.png "Advertisers View")
+![Advertisers List View](https://github.com/ofirrifo/myApp/blob/master/screenshot-advertisers.png "Advertisers List View")
 
 ### Edit Advertiser View
 
