@@ -12,6 +12,7 @@
  * [lodash](https://lodash.com/) >> A JavaScript utility library delivering consistency, modularity, performance
  * [angular-bootstrap](https://angular-ui.github.io/bootstrap/) >> show an tooltip
  * [angular-spinner](https://github.com/urish/angular-spinner) >> show an  animated spinner
+ * [angular-markdown-directive](https://github.com/btford/angular-markdown-directive) >> show markdown parsed
  
 ## Yeoman
  ---
