@@ -10,10 +10,18 @@
         enableSorting: true,
         enableFiltering: true,
         columnDefs: [
-          {name: 'id', width: 100},
+          {
+            name: 'id',
+            width: 100,
+            sortingAlgorithm: function (a,b) {
+              if (a == b) return 0;
+              if (a < b) return -1;
+              return 1;
+            }
+          },
           {
             name: 'editAdvertiser',
-            enableFiltering:false,
+            enableFiltering: false,
             enableSorting: false,
             width: 140,
             cellTemplate: '<div class="ui-grid-cell-contents">' +
@@ -28,8 +36,8 @@
             enableSorting: false,
             cellTemplate: '<div class="ui-grid-cell-contents"><a target="_blank" href="{{ COL_FIELD }}">{{COL_FIELD }}</a></div>'
           },
-          {name: 'uiCreatedAt', enableFiltering:false},
-          {name: 'uiUpdatedAt', enableFiltering:false}
+          {name: 'uiCreatedAt', enableFiltering: false},
+          {name: 'uiUpdatedAt', enableFiltering: false}
         ]
       }
     });
