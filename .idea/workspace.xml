@@ -31,8 +31,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7532258" vertical-offset="842" max-vertical-offset="1462">
-              <caret line="77" column="122" selection-start-line="77" selection-start-column="122" selection-end-line="77" selection-end-column="122" />
+            <state vertical-scroll-proportion="0.86290324" vertical-offset="842" max-vertical-offset="1530">
+              <caret line="81" column="124" selection-start-line="81" selection-start-column="124" selection-end-line="81" selection-end-column="124" />
               <folding />
             </state>
           </provider>
@@ -466,7 +466,7 @@
       <workItem from="1450366496592" duration="693000" />
       <workItem from="1450376803865" duration="2521000" />
       <workItem from="1450421016445" duration="659000" />
-      <workItem from="1450428483188" duration="3099000" />
+      <workItem from="1450428483188" duration="3167000" />
     </task>
     <task id="LOCAL-00001" summary="remove restangular&#10;remove angular-material">
       <created>1450197701879</created>
@@ -540,11 +540,17 @@
       <option name="project" value="LOCAL" />
       <updated>1450431425332</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add logo&#10;add screenshot-edit-advertiser.png">
+      <created>1450431597341</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1450431597341</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50947000" />
+    <option name="totallyTimeSpent" value="51015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1002,8 +1008,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7532258" vertical-offset="842" max-vertical-offset="1462">
-          <caret line="77" column="122" selection-start-line="77" selection-start-column="122" selection-end-line="77" selection-end-column="122" />
+        <state vertical-scroll-proportion="0.86290324" vertical-offset="842" max-vertical-offset="1530">
+          <caret line="81" column="124" selection-start-line="81" selection-start-column="124" selection-end-line="81" selection-end-column="124" />
           <folding />
         </state>
       </provider>
