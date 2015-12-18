@@ -17,6 +17,7 @@
 
     var vm = this;
     vm.gridOptions = advertisersGridConst.gridOptions;
+    vm.showSpinner = true;
 
     advertiserRestService.getAdvertisers().then(function (advertisers) {
       vm.gridOptions.data = advertisers;
@@ -25,6 +26,8 @@
         advertiser.uiCreatedAt = advertiserCommonService.formatDateAndTime(advertiser.createdAt);
         advertiser.uiUpdatedAt = advertiserCommonService.formatDateAndTime(advertiser.updatedAt);
       });
+
+      vm.showSpinner = false;
     });
 
     vm.onEditClick = function (row) {

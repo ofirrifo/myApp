@@ -16,7 +16,8 @@ angular
     'ui.grid',
     'directives.customvalidation.customValidationTypes',
     'ui.ace',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'angularSpinner'
   ])
   .config(function ($routeProvider) {
     $routeProvider
