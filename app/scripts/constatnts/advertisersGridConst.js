@@ -8,10 +8,12 @@
     .constant('advertisersGridConst', {
       gridOptions: {
         enableSorting: true,
+        enableFiltering: true,
         columnDefs: [
           {name: 'id', width: 100},
           {
             name: 'editAdvertiser',
+            enableFiltering:false,
             enableSorting: false,
             width: 140,
             cellTemplate: '<div class="ui-grid-cell-contents">' +
@@ -22,11 +24,12 @@
           {name: 'description', width: 500, enableSorting: false},
           {
             name: 'link',
-            width: 500, enableSorting: false,
+            width: 500,
+            enableSorting: false,
             cellTemplate: '<div class="ui-grid-cell-contents"><a target="_blank" href="{{ COL_FIELD }}">{{COL_FIELD }}</a></div>'
           },
-          {name: 'uiCreatedAt'},
-          {name: 'uiUpdatedAt'}
+          {name: 'uiCreatedAt', enableFiltering:false},
+          {name: 'uiUpdatedAt', enableFiltering:false}
         ]
       }
     });
