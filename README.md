@@ -18,7 +18,7 @@
  I generate my project with [Yeoman](http://yeoman.io/)
 
 
-## Install 
+## Installation 
 ---
 
 ### Advertiser Backend (Server) Project [(https://github.com/IlanFrumer/exercises)](https://github.com/IlanFrumer/exercises)
@@ -54,7 +54,7 @@ bower install
 
 ### Advertiser Backend (Server) Project [(https://github.com/IlanFrumer/exercises)](https://github.com/IlanFrumer/exercises)
 
-#### Execute the following command
+#### Open project and execute the following command
 
 ```
 npm start
@@ -62,8 +62,12 @@ npm start
 
 ### Advertiser Frontend (Client) Project [(https://github.com/ofirrifo/myApp)](https://github.com/ofirrifo/myApp)
 
-#### Execute the following command
+#### Open project and execute the following command
 
 ```
 grunt serve
 ```
+
+## Miscellaneous
+
+1. Advertiser Backend (Server) Project listen on port 3000
