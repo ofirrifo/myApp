@@ -46,10 +46,10 @@
       }
     }
 
-    function initLastAdvertiser(){
-      if(vm.lastAdvertiser.length === 0){
+    function initLastAdvertiser() {
+      if (vm.lastAdvertiser.length === 0) {
         var lastAdvertiser = localStorageService.getObject("lastAdvertiser");
-        if(lastAdvertiser){
+        if (lastAdvertiser) {
           vm.lastAdvertiser = lastAdvertiser;
         }
       }

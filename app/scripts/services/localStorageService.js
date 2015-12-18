@@ -19,11 +19,12 @@
 
     self.getObject = function (key) {
       var item = localStorage.getItem(key);
-      return item ? JSON.parse(localStorage.getItem(key)): null ;
+      return item ? JSON.parse(localStorage.getItem(key)) : null;
     };
 
     self.setObject = function (key, object) {
       localStorage.setItem(key, JSON.stringify(object));
     };
   }
+
 })();

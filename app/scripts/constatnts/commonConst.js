@@ -9,8 +9,9 @@
       events: {
         names: {
           onOpenAdvertiser: "onOpenAdvertiser",
-          initLastAdvertiser:"initLastAdvertiser"
+          initLastAdvertiser: "initLastAdvertiser"
         }
       }
     });
+
 })(angular);

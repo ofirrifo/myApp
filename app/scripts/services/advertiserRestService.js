@@ -16,7 +16,7 @@
 
   function advertiserRestService($http, $q, alertService) {
     var self = this,
-    baseUrl = 'http://localhost:3000/api/';
+      baseUrl = 'http://localhost:3000/api/';
 
 
     self.getAdvertisers = function () {
@@ -67,9 +67,9 @@
 
     self.saveAdvertiser = function (advertiser, isEditMode) {
       var deferred = $q.defer();
-      var method = isEditMode ? "PUT":"POST";
+      var method = isEditMode ? "PUT" : "POST";
       var url = baseUrl + 'advertiser';
-      if(method === "PUT"){
+      if (method === "PUT") {
         url += '/' + advertiser.id;
       }
 
@@ -98,4 +98,5 @@
       return deferred.promise;
     };
   }
+
 })(angular);

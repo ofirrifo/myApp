@@ -6,17 +6,18 @@
 
   angular.module('advertiserApp')
     .constant('alertConst', {
-      defaultAlertOption:{
-        success:{
+      defaultAlertOption: {
+        success: {
           type: 'success',
           title: 'Success',
           showCloseButton: true
         },
-        error:{
+        error: {
           type: 'error',
           title: 'Error',
           showCloseButton: true
         }
       }
     });
+
 })(angular);

@@ -28,4 +28,5 @@
       toaster.pop(defaultAlertOption.error);
     };
   }
+
 })();
