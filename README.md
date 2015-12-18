@@ -16,3 +16,54 @@
  ---
  
  I generate my project with [Yeoman](http://yeoman.io/)
+
+
+## Install 
+---
+
+### Advertiser Backend (Server) Project [(https://github.com/IlanFrumer/exercises)](https://github.com/IlanFrumer/exercises)
+
+#### Execute the following commands
+
+```
+git clone https://github.com/IlanFrumer/exercises
+```
+
+```
+npm install
+```
+
+### Advertiser Frontend (Client) Project [(https://github.com/ofirrifo/myApp)](https://github.com/ofirrifo/myApp)
+
+#### Execute the following commands
+
+```
+git clone https://github.com/ofirrifo/myApp.git
+```
+
+```
+npm install
+```
+
+```
+bower install
+```
+
+## Execution Projects
+---
+
+### Advertiser Backend (Server) Project [(https://github.com/IlanFrumer/exercises)](https://github.com/IlanFrumer/exercises)
+
+#### Execute the following command
+
+```
+npm start
+```
+
+### Advertiser Frontend (Client) Project [(https://github.com/ofirrifo/myApp)](https://github.com/ofirrifo/myApp)
+
+#### Execute the following command
+
+```
+grunt serve
+```
