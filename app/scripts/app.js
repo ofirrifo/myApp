@@ -14,7 +14,6 @@ angular
     'toaster',
     'ngAnimate',
     'ui.grid',
-    'directives.customvalidation.customValidationTypes',
     'ui.ace',
     'ui.bootstrap',
     'angularSpinner',

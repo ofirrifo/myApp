@@ -49,7 +49,6 @@
       vm.showSpinner = false;
     }
 
-
     vm.decriptionEditorOptions = {
       useWrapMode: true,
       showGutter: false,
@@ -57,23 +56,12 @@
       mode: 'markdown'
     };
 
-
     vm.onSaveClick = function () {
-      advertiserRestService.saveAdvertiser(vm.advertiser, vm.isEditMode).then(function(advertiser){
+      advertiserRestService.saveAdvertiser(vm.advertiser, vm.isEditMode).then(function (advertiser) {
         vm.showSpinner = false;
         advertiserCommonService.navigateTo("advertiser/" + advertiser.id);
       });
     };
-
-    $scope.locallyDefinedValidations = [
-      {
-        errorMessage: 'URL is not valid',
-        validator: function (errorMessageElement, val) {
-          return val.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
-
-        }
-      }
-    ];
 
     $scope.$on("$destroy", function () {
       if (showSpinnerTimeout) {

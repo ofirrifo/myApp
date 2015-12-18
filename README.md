@@ -5,8 +5,7 @@
  
  * [AngularJS v1.4.8](https://angularjs.org/) >> framework
  * [AngularJS-Toaster](https://github.com/jirikavi/AngularJS-Toaster) >> use for alerts
- * [angular-ui-grid](http://ui-grid.info/) >> show all advertisers in grid
- * [angular-ui-form-validation](https://github.com/nelsonomuto/angular-ui-form-validation) >> validation on advertiser fields
+ * [angular-ui-grid](http://ui-grid.info/) >> show all advertisers in grid 
  * [moment](http://momentjs.com/) >> format advertiser date and time
  * [angular-ui-ace](http://angular-ui.github.io/ui-ace/) >> show and edit markdown advertiser description
  * [lodash](https://lodash.com/) >> A JavaScript utility library delivering consistency, modularity, performance
