@@ -1,4 +1,4 @@
-# My App
+# [My App](https://github.com/ofirrifo/myApp)
 
 ## Bower Components
  ---
@@ -79,13 +79,16 @@ grunt serve
 ## Screenshot
 ---
 
-### Advertisers View
+### Advertisers list View
 
 ![Advertisers View](https://github.com/ofirrifo/myApp/blob/master/screenshot-advertisers.png "Advertisers View")
 
+### Edit Advertiser View
+
+![Edit Advertiser View](https://github.com/ofirrifo/myApp/blob/master/screenshot-edit-advertiser.png "Edit Advertiser View")
+
 ### New Advertiser View
 
-![New Advertiser View](https://github.com/ofirrifo/myApp/blob/master/screenshot-New-advertiser.png "New Advertiser View")
-
+![New Advertiser View](https://github.com/ofirrifo/myApp/blob/master/screenshot-new-advertiser.png "New Advertiser View")
 
 

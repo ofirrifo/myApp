@@ -22,6 +22,7 @@
     vm.isEditMode = advertiserCommonService.isEditMode(advertiserId);
 
     if (vm.isEditMode) {
+      vm.isValidView = true;
       advertiserRestService.getAdvertiserById(advertiserId).then(function (advertiser) {
         vm.advertiser = advertiser;
         vm.advertiser.uiCreatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.createdAt);
@@ -40,6 +41,7 @@
       });
     }
     else {
+      vm.isValidView = false;
       vm.advertiser = advertiserEntityFactoryService.createAdvertiser();
       vm.title = "New Advertiser";
       vm.showSpinner = false;
