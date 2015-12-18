@@ -35,7 +35,7 @@
         vm.title = "Edit Advertiser";
 
         // ***NOTE**
-        // this time out it just for the demo to show I added spinner
+        // this $timeout it just for the demo to show I added spinner
         // without the time out the grid load very fast and we will not see the spinner
         showSpinnerTimeout = $timeout(function () {
           vm.showSpinner = false;
@@ -59,7 +59,10 @@
 
 
     vm.onSaveClick = function () {
-      advertiserRestService.saveAdvertiser(vm.advertiser, vm.isEditMode);
+      advertiserRestService.saveAdvertiser(vm.advertiser, vm.isEditMode).then(function(advertiser){
+        vm.showSpinner = false;
+        advertiserCommonService.navigateTo("advertiser/" + advertiser.id);
+      });
     };
 
     $scope.locallyDefinedValidations = [

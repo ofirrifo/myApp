@@ -82,11 +82,11 @@
         },
 
         data: advertiser
-      }).then(function successCallback(advertisers) {
+      }).then(function successCallback(advertiser) {
         alertService.addSuccess({
           title: 'Advertiser saved successfully'
         });
-        deferred.resolve(advertisers);
+        deferred.resolve(advertiser.data);
       }, function errorCallback(error) {
         alertService.addError({
           title: 'Fail to save advertisers',

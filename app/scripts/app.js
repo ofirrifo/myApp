@@ -29,7 +29,7 @@ angular
         controllerAs: 'advertisersCtrl'
       })
       .when('/advertiser/:id', {
-        templateUrl: 'views/advertiserNew.html',
+        templateUrl: 'views/advertiserNewEdit.html',
         controller: 'AdvertiserCtrl',
         controllerAs: 'advertiserCtrl'
       })

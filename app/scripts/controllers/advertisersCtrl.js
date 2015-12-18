@@ -32,7 +32,7 @@
       });
 
       // ***NOTE**
-      // this time out it just for the demo to show I added spinner
+      // this $timeout it just for the demo to show I added spinner
       // without the time out the grid load very fast and we will not see the spinner
       showSpinnerTimeout = $timeout(function () {
         vm.showSpinner = false;
@@ -41,7 +41,7 @@
     });
 
     vm.onEditClick = function (row) {
-      $location.path("advertiser/" + row.entity.id);
+      advertiserCommonService.navigateTo("advertiser/" + row.entity.id);
     };
 
     $scope.$on("$destroy", function () {

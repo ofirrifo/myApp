@@ -12,17 +12,21 @@
   angular.module('advertiserApp')
     .service('advertiserCommonService', advertiserCommonService);
 
-  advertiserCommonService.$inject = [];
+  advertiserCommonService.$inject = ['$location'];
 
-  function advertiserCommonService() {
+  function advertiserCommonService($location) {
     var self = this;
 
     self.isEditMode = function (id) {
-      return id !== "new";
+      return Math.round(id) == id;
     };
 
     self.formatDateAndTime = function (date) {
       return moment(date).format('YYYY-MM-DD HH:mm:ss');
+    };
+
+    self.navigateTo = function (path) {
+      $location.path(path);
     };
   }
 
