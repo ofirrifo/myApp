@@ -31,7 +31,11 @@
     <div class="advertiser-row">
       <label class="mandatory-label advertiser-form-label description-label">Description</label>
       <div ui-ace="advertiserCtrl.decriptionEditorOptions" ng-model="advertiserCtrl.advertiser.description"></div>
+
+      <div class="parsed-markdown" btf-markdown="advertiserCtrl.advertiser.description">
+      </div>
     </div>
+
 
     <!--Advertiser Link-->
     <div class="advertiser-row">

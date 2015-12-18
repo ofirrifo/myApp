@@ -17,7 +17,9 @@ angular
     'directives.customvalidation.customValidationTypes',
     'ui.ace',
     'ui.bootstrap',
-    'angularSpinner'
+    'angularSpinner',
+    'ngSanitize',
+    'btford.markdown'
   ])
   .config(function ($routeProvider) {
     $routeProvider

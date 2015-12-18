@@ -29,7 +29,7 @@ $field-width: 26%;
     margin-right: 5px;
   }
 
-  .description-label{
+  .description-label {
     float: left;
   }
 
@@ -67,7 +67,16 @@ $field-width: 26%;
     left: 4px;
   }
 
-  .advertiser-row{
+  .advertiser-row {
     margin: 5px 0;
+    display: flex;
+  }
+
+  .parsed-markdown {
+    width: $field-width;
+    margin-left: 20px;
+    overflow: auto;
+    height: 203px;
+    border: 1px solid $ubimo-green-color;
   }
 }
