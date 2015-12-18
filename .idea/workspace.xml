@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="040a50b9-da77-472f-86f1-748f6202a96f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshot-New-advertiser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshot-advertisers.png" />
-      <change type="DELETED" beforePath="C:\dev\campaings\screenshot-edit-advertiser.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="campaings.iws" />
@@ -33,8 +31,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.86290324" vertical-offset="842" max-vertical-offset="1530">
-              <caret line="81" column="124" selection-start-line="81" selection-start-column="124" selection-end-line="81" selection-end-column="124" />
+            <state vertical-scroll-proportion="0.91774195" vertical-offset="842" max-vertical-offset="1581">
+              <caret line="83" column="103" selection-start-line="83" selection-start-column="103" selection-end-line="83" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -468,7 +466,7 @@
       <workItem from="1450366496592" duration="693000" />
       <workItem from="1450376803865" duration="2521000" />
       <workItem from="1450421016445" duration="659000" />
-      <workItem from="1450428483188" duration="4152000" />
+      <workItem from="1450428483188" duration="4265000" />
     </task>
     <task id="LOCAL-00001" summary="remove restangular&#10;remove angular-material">
       <created>1450197701879</created>
@@ -554,11 +552,17 @@
       <option name="project" value="LOCAL" />
       <updated>1450431666302</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add 2 screenshot">
+      <created>1450435692001</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1450435692001</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52000000" />
+    <option name="totallyTimeSpent" value="52113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -578,7 +582,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28507796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1086262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27582535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -648,7 +652,8 @@
     <MESSAGE value="1. add tooltip&#10;2. add the 3 last edit advertiser" />
     <MESSAGE value="update readme file" />
     <MESSAGE value="add logo&#10;add screenshot-edit-advertiser.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logo&#10;add screenshot-edit-advertiser.png" />
+    <MESSAGE value="add 2 screenshot" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2 screenshot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1011,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86290324" vertical-offset="842" max-vertical-offset="1530">
-          <caret line="81" column="124" selection-start-line="81" selection-start-column="124" selection-end-line="81" selection-end-column="124" />
+        <state vertical-scroll-proportion="0.91774195" vertical-offset="842" max-vertical-offset="1581">
+          <caret line="83" column="103" selection-start-line="83" selection-start-column="103" selection-end-line="83" selection-end-column="103" />
           <folding />
         </state>
       </provider>
