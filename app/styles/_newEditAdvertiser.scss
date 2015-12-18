@@ -1,0 +1,67 @@
+/*
+  New Edit Advertiser
+*/
+
+.new-advertiser-container {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+
+  .advertiser-form-label {
+    width: 100px;
+    color: $dark-gray-color;
+  }
+
+  .normal-label::before {
+    content: "*";
+    opacity: 0;
+    margin-right: 5px;
+  }
+
+  .mandatory-label::before {
+    content: "*";
+    color: $red-color;
+    margin-right: 5px;
+  }
+
+  .description-label{
+    float: left;
+  }
+
+  .CustomValidationError {
+    position: relative;
+    font-size: 0.8em;
+    color: $error-color;
+  }
+
+  .button-strip {
+    position: fixed;
+    bottom: 0;
+    background: $main-color;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+  }
+
+  .save-button {
+    float: right;
+    background-color: $third-color;
+    color: $secondary-color;
+    border-radius: 0;
+  }
+
+  .advertiser-input-width {
+    width: 400px;
+  }
+
+  .ace_editor {
+    display: inline-block;
+    width: 92%;
+    height: 200px;
+    position: relative;
+    left: 4px;
+  }
+}
