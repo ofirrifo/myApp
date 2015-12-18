@@ -12,11 +12,15 @@
   }
 
   .navbar-nav > li > a {
-    color: $white-color;
+    @include single-transition;
+
+    color: $ubimo-green-color;
+
     &:hover {
       color: $white-color;
-      opacity: 0.7;
+      background-color: $ubimo-green-color;
     }
+
     &:focus {
       color: $white-color;
     }

@@ -1,7 +1,13 @@
 /**
-* Color Palette
+* ubimo Color Palette
 **/
 
+$ubimo-button-color: #ff7369;
+$ubimo-green-color: #44c3b5;
+
+/**
+* Color Palette
+**/
 $main-color: #246fdc;
 $secondary-color: #003471;
 $dark-secondary-color: #0d2a4d;
@@ -28,4 +34,11 @@ $red-color: #FF0000;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/**
+* Classes
+**/
+.view-title{
+  color: $ubimo-green-color;
 }

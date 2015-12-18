@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="040a50b9-da77-472f-86f1-748f6202a96f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/loadingSpinner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/directive/loadingSpinnerDirective.js" />
+      <change type="DELETED" beforePath="C:\dev\campaings\app\advertisers\views\advertisers.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_common.scss" afterPath="$PROJECT_DIR$/app/styles/_common.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_headerNavbar.scss" afterPath="$PROJECT_DIR$/app/styles/_headerNavbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/_newEditAdvertiser.scss" afterPath="$PROJECT_DIR$/app/styles/_newEditAdvertiser.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/advertiserCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/advertiserCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/advertiserNew.html" afterPath="$PROJECT_DIR$/app/views/advertiserNew.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/advertisers.html" afterPath="$PROJECT_DIR$/app/views/advertisers.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/advertisersCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/advertisersCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma.conf.js" afterPath="$PROJECT_DIR$/test/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="campaings.iws" />
@@ -32,64 +39,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="_newEditAdvertiser.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/_newEditAdvertiser.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.285714" vertical-offset="0" max-vertical-offset="1632">
-              <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding />
+            <state vertical-scroll-proportion="-8.823529" vertical-offset="621" max-vertical-offset="1241">
+              <caret line="69" column="17" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="17" />
+              <folding>
+                <element signature="e#268#330#0" expanded="false" />
+                <element signature="e#450#472#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
+      <file leaf-file-name="advertiserNew.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/advertiserNew.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614" vertical-offset="1394" max-vertical-offset="2142">
-              <caret line="83" column="40" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="advertisers.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/advertisers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="204">
-              <caret line="2" column="93" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="advertiserCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/advertiserCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="363" max-vertical-offset="1088">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="advertisersCtrl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/advertisersCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.708126" vertical-offset="66" max-vertical-offset="765">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.7561779" vertical-offset="442" max-vertical-offset="1258">
+              <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -119,31 +86,35 @@
         <option value="$PROJECT_DIR$/test/spec/controllers/about.js" />
         <option value="$PROJECT_DIR$/test/spec/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/constatnts/alertConst.js" />
-        <option value="$PROJECT_DIR$/app/views/advertiserNew.html" />
         <option value="$PROJECT_DIR$/app/views/templates/advertisersGridButtonTemplate.html" />
         <option value="$PROJECT_DIR$/app/views/advertisersGridButtonTemplate.html" />
         <option value="$PROJECT_DIR$/app/scripts/services/advertiserCommonService.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/advertiserRestService.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/advertiserCtrl.js" />
         <option value="$PROJECT_DIR$/app/scripts/directive/lastAdvertiserDirective.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/styles/headerNavbar.scss" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/styles/_colorPalette.scss" />
         <option value="$PROJECT_DIR$/app/views/lastAdvertiser.html" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/styles/_advertisers.scss" />
-        <option value="$PROJECT_DIR$/app/styles/_headerNavbar.scss" />
         <option value="$PROJECT_DIR$/app/styles/_lastAdvertiser.scss" />
-        <option value="$PROJECT_DIR$/app/styles/_common.scss" />
-        <option value="$PROJECT_DIR$/app/styles/_newEditAdvertiser.scss" />
         <option value="$PROJECT_DIR$/app/scripts/constatnts/advertisersGridConst.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/styles/_common.scss" />
+        <option value="$PROJECT_DIR$/app/scripts/directive/spinner Directive.js" />
+        <option value="$PROJECT_DIR$/app/scripts/directive/infraSpinnerDirective.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/directive/loadingSpinnerDirective.js" />
+        <option value="$PROJECT_DIR$/app/views/loadingSpinner.html" />
         <option value="$PROJECT_DIR$/app/views/advertisers.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/advertisersCtrl.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/advertiserCtrl.js" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/styles/_headerNavbar.scss" />
+        <option value="$PROJECT_DIR$/app/styles/_newEditAdvertiser.scss" />
+        <option value="$PROJECT_DIR$/app/views/advertiserNew.html" />
       </list>
     </option>
   </component>
@@ -172,10 +143,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -267,7 +238,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,10 +257,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,6 +284,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\campaings\app\scripts\directive" />
       <recent name="C:\dev\campaings\app\views" />
       <recent name="C:\dev\campaings\app" />
       <recent name="C:\dev\campaings\app\scripts\constatnts" />
@@ -599,7 +567,7 @@
       <workItem from="1450366496592" duration="693000" />
       <workItem from="1450376803865" duration="2521000" />
       <workItem from="1450421016445" duration="659000" />
-      <workItem from="1450428483188" duration="10115000" />
+      <workItem from="1450428483188" duration="15726000" />
     </task>
     <task id="LOCAL-00001" summary="remove restangular&#10;remove angular-material">
       <created>1450197701879</created>
@@ -721,14 +689,20 @@
       <option name="project" value="LOCAL" />
       <updated>1450443740263</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="use  showSpinner on load grid data&#10;">
+      <created>1450444016258</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1450444016258</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57963000" />
+    <option name="totallyTimeSpent" value="63574000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -743,10 +717,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28507796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27534562" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2845622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.266147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22832723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19914803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36636972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -819,7 +793,8 @@
     <MESSAGE value="seperate scss file" />
     <MESSAGE value="All links out of site should be opened on a new tab&#10;" />
     <MESSAGE value="new bower package angular-spinner&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="new bower package angular-spinner&#10;" />
+    <MESSAGE value="use  showSpinner on load grid data&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="use  showSpinner on load grid data&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -963,13 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/advertisers/views/advertisers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="119">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/constatnts/alertConst.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0796875" vertical-offset="0" max-vertical-offset="640">
@@ -1004,13 +972,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/advertiserNew.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15686275" vertical-offset="331" max-vertical-offset="1173">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/AngularJS-Toaster/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.981132" vertical-offset="3359" max-vertical-offset="4080">
@@ -1032,13 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1581">
           <caret line="11" column="33" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directive/lastAdvertiserDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="884">
-          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1090,75 +1044,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/lastAdvertiser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
-          <caret line="0" column="41" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7067545" vertical-offset="64" max-vertical-offset="714">
-          <caret line="90" column="1" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
-          <folding>
-            <element signature="e#198#275#0" expanded="false" />
-            <element signature="e#282#299#0" expanded="false" />
-            <element signature="e#406#454#0" expanded="false" />
-            <element signature="e#489#721#0" expanded="false" />
-            <element signature="e#624#719#0" expanded="false" />
-            <element signature="e#756#828#0" expanded="false" />
-            <element signature="e#853#874#0" expanded="false" />
-            <element signature="e#935#1055#0" expanded="false" />
-            <element signature="e#1003#1053#0" expanded="false" />
-            <element signature="e#1103#1162#0" expanded="false" />
-            <element signature="e#1133#1160#0" expanded="false" />
-            <element signature="e#1243#1595#0" expanded="false" />
-            <element signature="e#1258#1285#0" expanded="false" />
-            <element signature="e#1364#1412#0" expanded="false" />
-            <element signature="e#1454#1484#0" expanded="false" />
-            <element signature="e#1566#1593#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_headerNavbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6666666" vertical-offset="0" max-vertical-offset="629">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="e#100#149#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_lastAdvertiser.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="255">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_common.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="629">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_newEditAdvertiser.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15292096" vertical-offset="421" max-vertical-offset="1003">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-          <folding>
-            <element signature="e#248#310#0" expanded="false" />
-            <element signature="e#430#452#0" expanded="false" />
-            <element signature="e#846#869#0" expanded="false" />
-            <element signature="e#885#991#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1200,34 +1090,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directive/lastAdvertiserDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="918">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="1394" max-vertical-offset="2142">
-          <caret line="83" column="40" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="40" />
+        <state vertical-scroll-proportion="-17.153847" vertical-offset="1526" max-vertical-offset="2159">
+          <caret line="116" column="62" selection-start-line="116" selection-start-column="62" selection-end-line="116" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/lastAdvertiser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="0" column="41" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/loadingSpinner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="119">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/advertisers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="204">
-          <caret line="2" column="93" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="93" />
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/advertiserCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="363" max-vertical-offset="1088">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="-5.44" vertical-offset="493" max-vertical-offset="1241">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding>
+            <element signature="e#1879#1960#0" expanded="false" />
+            <element signature="e#2002#2265#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/advertisersCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.708126" vertical-offset="66" max-vertical-offset="765">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="969">
+          <caret line="47" column="7" selection-start-line="43" selection-start-column="3" selection-end-line="47" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directive/loadingSpinnerDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="748">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_common.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3846154" vertical-offset="114" max-vertical-offset="850">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1764705" vertical-offset="25" max-vertical-offset="731">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#198#275#0" expanded="false" />
+            <element signature="e#282#299#0" expanded="false" />
+            <element signature="e#406#454#0" expanded="false" />
+            <element signature="e#489#721#0" expanded="false" />
+            <element signature="e#624#719#0" expanded="false" />
+            <element signature="e#756#828#0" expanded="false" />
+            <element signature="e#853#874#0" expanded="false" />
+            <element signature="e#935#1055#0" expanded="false" />
+            <element signature="e#1003#1053#0" expanded="false" />
+            <element signature="e#1103#1162#0" expanded="false" />
+            <element signature="e#1133#1160#0" expanded="false" />
+            <element signature="e#1243#1595#0" expanded="false" />
+            <element signature="e#1258#1285#0" expanded="false" />
+            <element signature="e#1364#1412#0" expanded="false" />
+            <element signature="e#1454#1484#0" expanded="false" />
+            <element signature="e#1566#1593#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_headerNavbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.653846" vertical-offset="1" max-vertical-offset="748">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_newEditAdvertiser.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.823529" vertical-offset="621" max-vertical-offset="1241">
+          <caret line="69" column="17" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="17" />
+          <folding>
+            <element signature="e#268#330#0" expanded="false" />
+            <element signature="e#450#472#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/advertiserNew.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7561779" vertical-offset="442" max-vertical-offset="1258">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
           <folding />
         </state>
       </provider>

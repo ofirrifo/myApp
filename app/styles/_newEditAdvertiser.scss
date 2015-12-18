@@ -2,6 +2,8 @@
   New Edit Advertiser
 */
 
+$field-width: 26%;
+
 .new-advertiser-container {
   position: absolute;
   top: 80px;
@@ -54,14 +56,18 @@
   }
 
   .advertiser-input-width {
-    width: 400px;
+    width: $field-width;
   }
 
   .ace_editor {
     display: inline-block;
-    width: 92%;
+    width: $field-width;
     height: 200px;
     position: relative;
     left: 4px;
+  }
+
+  .advertiser-row{
+    margin: 5px 0;
   }
 }

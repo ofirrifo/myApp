@@ -1,6 +1,9 @@
 <div class="new-advertiser-container">
 
-  <h1>Advertiser</h1>
+  <!--Spinner-->
+  <loading-spinner show-spinner="advertiserCtrl.showSpinner"></loading-spinner>
+
+  <h1 class="view-title">{{advertiserCtrl.title}}</h1>
   <hr/>
 
   <form  novalidate="">
@@ -12,7 +15,7 @@
     </div>
 
     <!--Advertiser Name-->
-    <div>
+    <div class="advertiser-row">
       <label for="advertiser_name" class="mandatory-label advertiser-form-label">Name</label>
       <input
         type="text"
@@ -25,13 +28,13 @@
     </div>
 
     <!--Advertiser Description-->
-    <div>
+    <div class="advertiser-row">
       <label class="mandatory-label advertiser-form-label description-label">Description</label>
       <div ui-ace="advertiserCtrl.decriptionEditorOptions" ng-model="advertiserCtrl.advertiser.description"></div>
     </div>
 
     <!--Advertiser Link-->
-    <div>
+    <div class="advertiser-row">
       <label for="advertiser_link" class="mandatory-label advertiser-form-label">Link</label>
       <input
         type="url"
@@ -42,12 +45,14 @@
         placeholder="Enter advertiser link"/>
     </div>
 
-    <div ng-if=":: advertiserCtrl.advertiser.id">
+    <!--Created at-->
+    <div class="advertiser-row" ng-if=":: advertiserCtrl.advertiser.id">
       <label for="advertiser_name" class="normal-label advertiser-form-label">Created at</label>
       <label ng-bind=":: advertiserCtrl.advertiser.uiCreatedAt"></label>
     </div>
 
-    <div ng-if=":: advertiserCtrl.advertiser.id">
+    <!--Updated at-->
+    <div class="advertiser-row" ng-if=":: advertiserCtrl.advertiser.id">
       <label for="advertiser_name" class="normal-label advertiser-form-label">Updated at</label>
       <label ng-bind=":: advertiserCtrl.advertiser.uiUpdatedAt"></label>
     </div>

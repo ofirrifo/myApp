@@ -11,32 +11,45 @@
   angular.module('advertiserApp')
     .controller('AdvertiserCtrl', AdvertiserCtrl);
 
-  AdvertiserCtrl.$inject = ['$scope', 'advertiserEntityFactoryService', 'advertiserRestService', 'advertiserCommonService','$routeParams'];
+  AdvertiserCtrl.$inject = ['$scope', 'advertiserEntityFactoryService', 'advertiserRestService', 'advertiserCommonService', '$routeParams','$timeout'];
 
-  function AdvertiserCtrl($scope, advertiserEntityFactoryService, advertiserRestService, advertiserCommonService,$routeParams) {
+  function AdvertiserCtrl($scope, advertiserEntityFactoryService, advertiserRestService, advertiserCommonService, $routeParams, $timeout) {
     var vm = this,
-    advertiserId = $routeParams.id;
+      showSpinnerTimeout,
+      advertiserId = $routeParams.id;
 
+    vm.showSpinner = true;
     vm.isEditMode = advertiserCommonService.isEditMode(advertiserId);
 
-    if(vm.isEditMode){
+    if (vm.isEditMode) {
       advertiserRestService.getAdvertiserById(advertiserId).then(function (advertiser) {
         vm.advertiser = advertiser;
         vm.advertiser.uiCreatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.createdAt);
         vm.advertiser.uiUpdatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.updatedAt);
 
-        $scope.$root.$broadcast('onOpenAdvertiser',{name:vm.advertiser.name, id:advertiserId});
+        $scope.$root.$broadcast('onOpenAdvertiser', {name: vm.advertiser.name, id: advertiserId});
+
+        vm.title = "Edit Advertiser";
+
+        // ***NOTE**
+        // this time out it just for the demo to show I added spinner
+        // without the time out the grid load very fast and we will not see the spinner
+        showSpinnerTimeout = $timeout(function () {
+          vm.showSpinner = false;
+        }, 200);
       });
     }
-    else{
+    else {
       vm.advertiser = advertiserEntityFactoryService.createAdvertiser();
+      vm.title = "New Advertiser";
+      vm.showSpinner = false;
     }
 
 
     vm.decriptionEditorOptions = {
-      useWrapMode : true,
+      useWrapMode: true,
       showGutter: false,
-      theme:'twilight',
+      theme: 'twilight',
       mode: 'markdown'
     };
 
@@ -54,5 +67,11 @@
         }
       }
     ];
+
+    $scope.$on("$destroy", function () {
+      if (showSpinnerTimeout) {
+        $timeout.cancel(showSpinnerTimeout);
+      }
+    });
   }
 })(angular);
