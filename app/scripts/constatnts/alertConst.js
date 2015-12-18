@@ -4,11 +4,6 @@
 (function (angular) {
   'use strict';
 
-  /**
-   * @ngdoc service
-   * @name app.alertService
-   * @description
-   */
   angular.module('advertiserApp')
     .constant('alertConst', {
       defaultAlertOption:{

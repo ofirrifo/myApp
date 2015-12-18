@@ -17,8 +17,13 @@
 
   function advertiserEntityFactoryService() {
     var self = this;
+
     self.createAdvertiser = function (data) {
       return new Advertiser(data);
+    };
+
+    self.createDtoAdvertiser = function(data){
+      return new DtoAdvertiser(data);
     };
 
     function Advertiser(data){
@@ -28,6 +33,11 @@
       this.link = data ? data.link : null;
       this.createdAt = data ? data.createdAt : undefined;
       this.updatedAt = data ? data.updatedAt : undefined;
+    }
+
+    function DtoAdvertiser(data){
+      this.id = data ? data.id : undefined;
+      this.name = data ? data.name : "";
     }
   }
 })();

@@ -1,7 +1,7 @@
 /**
  * Created by ofir on 12/16/2015.
  */
-(function(angular){
+(function (angular) {
 
   angular.
     module('advertiserApp')
@@ -25,19 +25,32 @@
     }
   }
 
-  LastAdvertiserController.$inject = ['$scope'];
+  LastAdvertiserController.$inject = ['$scope', 'localStorageService', 'commonConst'];
 
-  function LastAdvertiserController($scope) {
-    var vm = this;
+  function LastAdvertiserController($scope, localStorageService, commonConst) {
+    var vm = this,
+      eventsNames = commonConst.events.names;
     vm.lastAdvertiser = [];
 
-    $scope.$on('onOpenAdvertiser', addAdvertiserTo3Last);
+    $scope.$on(eventsNames.onOpenAdvertiser, addAdvertiserTo3Last);
+    $scope.$on(eventsNames.initLastAdvertiser, initLastAdvertiser);
 
-    function addAdvertiserTo3Last(e, dtoAdvertiser){
-      if(!_.find(vm.lastAdvertiser,{id:dtoAdvertiser.id})){
+    function addAdvertiserTo3Last(e, dtoAdvertiser) {
+      if (!_.find(vm.lastAdvertiser, {id: dtoAdvertiser.id})) {
         vm.lastAdvertiser.unshift(dtoAdvertiser);
-        if(vm.lastAdvertiser.length > 3){
+        if (vm.lastAdvertiser.length > 3) {
           vm.lastAdvertiser.pop();
+        }
+
+        localStorageService.setObject("lastAdvertiser", vm.lastAdvertiser);
+      }
+    }
+
+    function initLastAdvertiser(){
+      if(vm.lastAdvertiser.length === 0){
+        var lastAdvertiser = localStorageService.getObject("lastAdvertiser");
+        if(lastAdvertiser){
+          vm.lastAdvertiser = lastAdvertiser;
         }
       }
     }

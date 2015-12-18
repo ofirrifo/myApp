@@ -11,14 +11,17 @@
   angular.module('advertiserApp')
     .controller('AdvertisersCtrl', AdvertisersCtrl);
 
-  AdvertisersCtrl.$inject = ['advertiserRestService', 'advertisersGridConst', 'advertiserCommonService', '$location', '$timeout', '$scope'];
+  AdvertisersCtrl.$inject = ['advertiserRestService', 'advertisersGridConst', 'advertiserCommonService', '$location', '$timeout', '$scope', 'commonConst'];
 
-  function AdvertisersCtrl(advertiserRestService, advertisersGridConst, advertiserCommonService, $location, $timeout, $scope) {
+  function AdvertisersCtrl(advertiserRestService, advertisersGridConst, advertiserCommonService, $location, $timeout, $scope, commonConst) {
 
     var vm = this,
+      eventsNames = commonConst.events.names,
       showSpinnerTimeout;
     vm.gridOptions = advertisersGridConst.gridOptions;
     vm.showSpinner = true;
+
+    $scope.$root.$broadcast(eventsNames.initLastAdvertiser);
 
     advertiserRestService.getAdvertisers().then(function (advertisers) {
       vm.gridOptions.data = advertisers;

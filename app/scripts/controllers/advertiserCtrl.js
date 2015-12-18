@@ -11,11 +11,12 @@
   angular.module('advertiserApp')
     .controller('AdvertiserCtrl', AdvertiserCtrl);
 
-  AdvertiserCtrl.$inject = ['$scope', 'advertiserEntityFactoryService', 'advertiserRestService', 'advertiserCommonService', '$routeParams','$timeout'];
+  AdvertiserCtrl.$inject = ['$scope', 'advertiserEntityFactoryService', 'advertiserRestService', 'advertiserCommonService', '$routeParams', '$timeout', 'commonConst'];
 
-  function AdvertiserCtrl($scope, advertiserEntityFactoryService, advertiserRestService, advertiserCommonService, $routeParams, $timeout) {
+  function AdvertiserCtrl($scope, advertiserEntityFactoryService, advertiserRestService, advertiserCommonService, $routeParams, $timeout, commonConst) {
     var vm = this,
       showSpinnerTimeout,
+      eventsNames = commonConst.events.names,
       advertiserId = $routeParams.id;
 
     vm.showSpinner = true;
@@ -28,7 +29,8 @@
         vm.advertiser.uiCreatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.createdAt);
         vm.advertiser.uiUpdatedAt = advertiserCommonService.formatDateAndTime(vm.advertiser.updatedAt);
 
-        $scope.$root.$broadcast('onOpenAdvertiser', {name: vm.advertiser.name, id: advertiserId});
+        var dtoAdvertiser = advertiserEntityFactoryService.createDtoAdvertiser(vm.advertiser);
+        $scope.$root.$broadcast(eventsNames.onOpenAdvertiser, dtoAdvertiser);
 
         vm.title = "Edit Advertiser";
 
