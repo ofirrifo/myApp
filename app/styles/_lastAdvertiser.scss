@@ -6,4 +6,11 @@
   .text-truncate {
     @include text-truncate(150px);
   }
+
+  .last-advertiser-tooltip + .tooltip > .tooltip-inner {
+    background-color: $ubimo-orange-color;
+  }
+  .last-advertiser-tooltip + .tooltip > .tooltip-arrow {
+    border-bottom-color: $ubimo-orange-color;
+  }
 }

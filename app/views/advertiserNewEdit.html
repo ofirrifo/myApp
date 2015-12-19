@@ -19,15 +19,15 @@
       <label for="advertiser_name" class="mandatory-label advertiser-form-label">Name</label>
       <input
         type="text"
-        name="input"
+        name="nameInput"
         required
         ng-minlength="3"
         class="advertiser-input-width"
         id="advertiser_name"
         ng-model="advertiserCtrl.advertiser.name"
         placeholder="Enter advertiser name"/>
-      <span class="validationError" ng-show="newEditAdvertiserForm.input.$error.required">Required!</span>
-      <span class="validationError" ng-show="newEditAdvertiserForm.input.$error.minlength">Advertiser Name must be at least 3 characters.</span>
+      <span class="validationError" ng-show="newEditAdvertiserForm.nameInput.$error.required">Required!</span>
+      <span class="validationError" ng-show="newEditAdvertiserForm.nameInput.$error.minlength">Advertiser Name must be at least 3 characters.</span>
     </div>
 
     <!--Advertiser Description-->
@@ -45,10 +45,12 @@
       <label for="advertiser_link" class="normal-label advertiser-form-label">Link</label>
       <input
         type="url"
+        name="linkInput"
         class="advertiser-input-width"
         id="advertiser_link"
         ng-model="advertiserCtrl.advertiser.link"
         placeholder="Enter advertiser link"/>
+      <span class="validationError" ng-show="newEditAdvertiserForm.linkInput.$error.url">Not valid link!</span>
     </div>
 
     <!--Advertiser Created at-->
@@ -67,7 +69,14 @@
 
   <!--Footer Button Strip-->
   <footer class="button-strip" >
-    <button type="button" class="btn btn-primary save-button" ng-click="advertiserCtrl.onSaveClick()">Save</button>
+    <button
+      type="button"
+      tooltip-is-open="newEditAdvertiserForm.$invalid" tooltip-placement="left"  uib-tooltip="Please fix the errors above."
+      ng-disabled="newEditAdvertiserForm.$invalid"
+      class="btn btn-primary save-button"
+      ng-click="advertiserCtrl.onSaveClick()">
+      Save
+    </button>
   </footer>
 
 </div>

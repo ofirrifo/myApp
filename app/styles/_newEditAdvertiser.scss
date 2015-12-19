@@ -58,6 +58,19 @@ $field-width: 36%;
     border-radius: 0;
   }
 
+  .save-button[disabled]{
+    background-color: $third-color;
+    opacity: 0.5;
+  }
+
+  .save-button[disabled] + .tooltip > .tooltip-inner {
+    background-color: $red-color;
+  }
+
+  .save-button[disabled] + .tooltip > .tooltip-arrow {
+    border-left-color: $red-color;
+  }
+
   .advertiser-input-width {
     @include text-truncate;
 
