@@ -76,6 +76,10 @@ grunt serve
 2. [My Task](https://github.com/ofirrifo/myApp/blob/master/advertiser%20project%20tasks.xlsx?raw=true)
 3. **NOTE** If you use Adblock you may need to disable it.
 
+## Video Demo
+---
+
+[Download Demo Video](https://github.com/ofirrifo/myApp/blob/master/advertiserDemoVideo.mp4?raw=true)
 
 ## Screenshot
 ---
@@ -91,8 +95,3 @@ grunt serve
 ### New Advertiser View
 
 ![New Advertiser View](https://github.com/ofirrifo/myApp/blob/master/screenshot-new-advertiser.png "New Advertiser View")
-
-## Video Demo
----
-
-[Download Demo Video](https://github.com/ofirrifo/myApp/blob/master/advertiserDemoVideo.mp4?raw=true)
