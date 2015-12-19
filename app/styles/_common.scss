@@ -16,6 +16,7 @@ $white-color: #ffffff;
 $dark-gray-color: #6b7587;
 $error-color: #d13d3b;
 $red-color: #FF0000;
+$transparent-color: rgba(255, 255, 255, 0);
 
 /**
 * Mixin
@@ -26,6 +27,16 @@ $red-color: #FF0000;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+@mixin custom-tooltip($background-color: $ubimo-orange-color, $border-top-color: $transparent-color, $border-right-color: $transparent-color, $border-bottom-color: $transparent-color, $border-left-color: $transparent-color) {
+  + .tooltip > .tooltip-inner {
+    background-color: $background-color;
+  }
+
+  + .tooltip > .tooltip-arrow {
+    border-color: $border-top-color $border-right-color $border-bottom-color $border-left-color;
+  }
 }
 
 /**

@@ -20,6 +20,7 @@
       <input
         type="text"
         name="nameInput"
+        tooltip-trigger="mouseenter" tooltip-placement="right"  uib-tooltip="{{advertiserCtrl.advertiser.name}}"
         required
         ng-minlength="3"
         class="advertiser-input-width"
@@ -46,6 +47,7 @@
       <input
         type="url"
         name="linkInput"
+        tooltip-trigger="mouseenter" tooltip-placement="right"  uib-tooltip="{{advertiserCtrl.advertiser.link}}"
         class="advertiser-input-width"
         id="advertiser_link"
         ng-model="advertiserCtrl.advertiser.link"

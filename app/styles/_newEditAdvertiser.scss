@@ -58,30 +58,25 @@ $field-width: 36%;
     border-radius: 0;
   }
 
-  .save-button[disabled]{
+  .save-button[disabled] {
     background-color: $third-color;
     opacity: 0.5;
-  }
 
-  .save-button[disabled] + .tooltip > .tooltip-inner {
-    background-color: $red-color;
-  }
-
-  .save-button[disabled] + .tooltip > .tooltip-arrow {
-    border-left-color: $red-color;
+    @include custom-tooltip($background-color: $red-color, $border-left-color: $red-color);
   }
 
   .advertiser-input-width {
     @include text-truncate;
+    @include custom-tooltip($border-right-color: $ubimo-orange-color);
 
     width: $field-width;
 
-    &:focus{
+    &:focus {
       outline: 0;
     }
   }
 
-  .advertiser-input-width.ng-invalid{
+  .advertiser-input-width.ng-invalid {
     border: 1px solid $error-color;
   }
 

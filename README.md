@@ -74,6 +74,7 @@ grunt serve
 
 1. Advertiser Backend (Server) Project listen on port 3000
 2. [My Task](https://github.com/ofirrifo/myApp/blob/master/advertiser%20project%20tasks.xlsx?raw=true)
+3. **NOTE** If you use Adblock you may need to disable it.
 
 
 ## Screenshot
