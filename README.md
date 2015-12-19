@@ -73,6 +73,7 @@ grunt serve
 ---
 
 1. Advertiser Backend (Server) Project listen on port 3000
+2. [My Task](https://github.com/ofirrifo/myApp/blob/master/advertiser%20project%20tasks.xlsx?raw=true)
 
 
 ## Screenshot
