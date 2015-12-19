@@ -13,7 +13,7 @@
           {
             name: 'id',
             width: 100,
-            sortingAlgorithm: function (a,b) {
+            sortingAlgorithm: function (a, b) {
               if (a == b) return 0;
               if (a < b) return -1;
               return 1;

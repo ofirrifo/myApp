@@ -40,7 +40,7 @@
         showSpinnerTimeout = $timeout(function () {
           vm.showSpinner = false;
         }, 200);
-      }, function(){
+      }, function () {
         vm.showSpinner = false;
       });
     }
