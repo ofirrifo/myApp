@@ -11,9 +11,9 @@
   angular.module('advertiserApp')
     .controller('AdvertisersCtrl', AdvertisersCtrl);
 
-  AdvertisersCtrl.$inject = ['advertiserRestService', 'advertisersGridConst', 'advertiserCommonService', '$location', '$timeout', '$scope', 'commonConst'];
+  AdvertisersCtrl.$inject = ['advertiserRestService', 'advertisersGridConst', 'advertiserCommonService', '$timeout', '$scope', 'commonConst'];
 
-  function AdvertisersCtrl(advertiserRestService, advertisersGridConst, advertiserCommonService, $location, $timeout, $scope, commonConst) {
+  function AdvertisersCtrl(advertiserRestService, advertisersGridConst, advertiserCommonService, $timeout, $scope, commonConst) {
 
     var vm = this,
       eventsNames = commonConst.events.names,
