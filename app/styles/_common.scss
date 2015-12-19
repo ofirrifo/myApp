@@ -46,3 +46,10 @@ $transparent-color: rgba(255, 255, 255, 0);
 .view-title {
   color: $ubimo-green-color;
 }
+
+@media screen and (max-width: 960px) {
+  .view-title {
+    display: none;
+  }
+}
+

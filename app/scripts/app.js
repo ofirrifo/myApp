@@ -25,14 +25,21 @@ angular
       .when('/', {
         templateUrl: 'views/advertisers.html',
         controller: 'AdvertisersCtrl',
-        controllerAs: 'advertisersCtrl'
+        controllerAs: 'advertisersCtrl',
+        title: 'Advertisers'
       })
       .when('/advertiser/:id', {
         templateUrl: 'views/advertiserNewEdit.html',
         controller: 'AdvertiserCtrl',
-        controllerAs: 'advertiserCtrl'
+        controllerAs: 'advertiserCtrl',
+        title: 'Advertiser'
       })
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .run(['$rootScope', '$route', function ($rootScope, $route) {
+    $rootScope.$on('$routeChangeSuccess', function () {
+      document.title = $route.current.title;
+    });
+  }]);

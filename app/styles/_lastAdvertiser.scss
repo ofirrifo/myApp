@@ -3,6 +3,8 @@
 **/
 
 .last-advertiser {
+  text-align: center;
+
   .text-truncate {
     @include text-truncate(150px);
   }
