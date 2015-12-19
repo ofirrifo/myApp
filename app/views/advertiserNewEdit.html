@@ -6,7 +6,7 @@
   <h1 class="view-title">{{advertiserCtrl.title}}</h1>
   <hr/>
 
-  <form  name="newEditAdvertiserForm">
+  <form name="newEditAdvertiserForm">
 
     <!--Advertiser ID-->
     <div ng-if=":: advertiserCtrl.advertiser.id">
@@ -20,7 +20,7 @@
       <input
         type="text"
         name="nameInput"
-        tooltip-trigger="mouseenter" tooltip-placement="right"  uib-tooltip="{{advertiserCtrl.advertiser.name}}"
+        tooltip-trigger="mouseenter" tooltip-placement="right" uib-tooltip="{{advertiserCtrl.advertiser.name}}"
         required
         ng-minlength="3"
         class="advertiser-input-width"
@@ -34,10 +34,20 @@
     <!--Advertiser Description-->
     <div class="advertiser-row">
       <label class="mandatory-label advertiser-form-label description-label">Description</label>
-      <div ui-ace="advertiserCtrl.decriptionEditorOptions" ng-model="advertiserCtrl.advertiser.description"></div>
 
-      <div class="parsed-markdown" btf-markdown="advertiserCtrl.advertiser.description">
-      </div>
+      <!--Markdown Editor-->
+      <!--Hidden Input Use for Validation-->
+      <input
+        id="description-markdown-editor-hidden-input"
+        type="text"
+        name="descriptionMarkdownEditorHiddenInput"
+        required
+        ng-model="advertiserCtrl.advertiser.description"/>
+      <div ui-ace="advertiserCtrl.decriptionEditorOptions" ng-model="advertiserCtrl.advertiser.description"></div>
+      <span class="validationError" ng-show="newEditAdvertiserForm.descriptionMarkdownEditorHiddenInput.$error.required">Required!</span>
+
+      <!--Parsed Markdown-->
+      <div ng-show="advertiserCtrl.advertiser.description.length > 0" class="parsed-markdown" btf-markdown="advertiserCtrl.advertiser.description"></div>
     </div>
 
 
@@ -47,7 +57,7 @@
       <input
         type="url"
         name="linkInput"
-        tooltip-trigger="mouseenter" tooltip-placement="right"  uib-tooltip="{{advertiserCtrl.advertiser.link}}"
+        tooltip-trigger="mouseenter" tooltip-placement="right" uib-tooltip="{{advertiserCtrl.advertiser.link}}"
         class="advertiser-input-width"
         id="advertiser_link"
         ng-model="advertiserCtrl.advertiser.link"
@@ -70,10 +80,11 @@
   </form>
 
   <!--Footer Button Strip-->
-  <footer class="button-strip" >
+  <footer class="button-strip">
     <button
       type="button"
-      tooltip-is-open="newEditAdvertiserForm.$invalid" tooltip-placement="left"  uib-tooltip="Please fix the errors above."
+      tooltip-is-open="newEditAdvertiserForm.$invalid" tooltip-placement="left"
+      uib-tooltip="Please fix the errors above."
       ng-disabled="newEditAdvertiserForm.$invalid"
       class="btn btn-primary save-button"
       ng-click="advertiserCtrl.onSaveClick()">

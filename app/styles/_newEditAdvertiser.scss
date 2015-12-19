@@ -98,4 +98,8 @@ $field-width: 36%;
     height: 203px;
     border: 1px solid $ubimo-green-color;
   }
+
+  #description-markdown-editor-hidden-input{
+    display: none;
+  }
 }
