@@ -1,4 +1,4 @@
-# [My App](https://github.com/ofirrifo/myApp)
+# [Advertisers App](https://github.com/ofirrifo/myApp)
 
 ## Bower Components
  ---
