@@ -2,8 +2,8 @@
   Last Advertiser
 **/
 
-.last-advertiser{
-  .text-truncate{
+.last-advertiser {
+  .text-truncate {
     @include text-truncate(150px);
   }
 }

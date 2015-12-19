@@ -8,6 +8,7 @@ $ubimo-green-color: #44c3b5;
 /**
 * Color Palette
 **/
+
 $main-color: #246fdc;
 $secondary-color: #003471;
 $third-color: #faf000;
@@ -21,7 +22,7 @@ $red-color: #FF0000;
 **/
 
 @mixin text-truncate($width: 100) {
-  width:$width;
+  width: $width;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -30,6 +31,7 @@ $red-color: #FF0000;
 /**
 * Classes
 **/
-.view-title{
+
+.view-title {
   color: $ubimo-green-color;
 }

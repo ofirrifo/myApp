@@ -6,7 +6,7 @@
   <h1 class="view-title">{{advertiserCtrl.title}}</h1>
   <hr/>
 
-  <form  novalidate="">
+  <form  name="newEditAdvertiserForm">
 
     <!--Advertiser ID-->
     <div ng-if=":: advertiserCtrl.advertiser.id">
@@ -19,10 +19,15 @@
       <label for="advertiser_name" class="mandatory-label advertiser-form-label">Name</label>
       <input
         type="text"
+        name="input"
+        required
+        ng-minlength="3"
         class="advertiser-input-width"
         id="advertiser_name"
         ng-model="advertiserCtrl.advertiser.name"
         placeholder="Enter advertiser name"/>
+      <span class="validationError" ng-show="newEditAdvertiserForm.input.$error.required">Required!</span>
+      <span class="validationError" ng-show="newEditAdvertiserForm.input.$error.minlength">Advertiser Name must be at least 3 characters.</span>
     </div>
 
     <!--Advertiser Description-->
@@ -37,7 +42,7 @@
 
     <!--Advertiser Link-->
     <div class="advertiser-row">
-      <label for="advertiser_link" class="mandatory-label advertiser-form-label">Link</label>
+      <label for="advertiser_link" class="normal-label advertiser-form-label">Link</label>
       <input
         type="url"
         class="advertiser-input-width"
@@ -46,13 +51,13 @@
         placeholder="Enter advertiser link"/>
     </div>
 
-    <!--Created at-->
+    <!--Advertiser Created at-->
     <div class="advertiser-row" ng-if=":: advertiserCtrl.advertiser.id">
       <label for="advertiser_name" class="normal-label advertiser-form-label">Created at</label>
       <label ng-bind=":: advertiserCtrl.advertiser.uiCreatedAt"></label>
     </div>
 
-    <!--Updated at-->
+    <!--Advertiser Updated at-->
     <div class="advertiser-row" ng-if=":: advertiserCtrl.advertiser.id">
       <label for="advertiser_name" class="normal-label advertiser-form-label">Updated at</label>
       <label ng-bind=":: advertiserCtrl.advertiser.uiUpdatedAt"></label>
@@ -60,6 +65,7 @@
 
   </form>
 
+  <!--Footer Button Strip-->
   <footer class="button-strip" >
     <button type="button" class="btn btn-primary save-button" ng-click="advertiserCtrl.onSaveClick()">Save</button>
   </footer>
