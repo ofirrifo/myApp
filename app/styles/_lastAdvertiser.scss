@@ -13,3 +13,20 @@
     @include custom-tooltip($border-bottom-color: $ubimo-orange-color);
   }
 }
+
+@media screen and (max-width: 960px) {
+
+  #last-advertiser-list {
+    .last-advertiser {
+      text-align: center;
+
+      .text-truncate {
+        @include text-truncate(50px);
+      }
+
+      .last-advertiser-tooltip {
+        @include custom-tooltip($border-bottom-color: $ubimo-orange-color);
+      }
+    }
+  }
+}
