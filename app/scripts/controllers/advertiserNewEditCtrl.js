@@ -54,7 +54,7 @@
       vm.showSpinner = false;
     }
 
-    vm.decriptionEditorOptions = {
+    vm.descriptionEditorOptions = {
       useWrapMode: true,
       showGutter: false,
       theme: 'twilight',
