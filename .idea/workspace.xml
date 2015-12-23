@@ -2,11 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="040a50b9-da77-472f-86f1-748f6202a96f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/advertiserCommonService.js" afterPath="$PROJECT_DIR$/app/scripts/services/advertiserCommonService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/advertiserEntityFactoryService.js" afterPath="$PROJECT_DIR$/app/scripts/services/advertiserEntityFactoryService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/advertiserRestService.js" afterPath="$PROJECT_DIR$/app/scripts/services/advertiserRestService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/alertService.js" afterPath="$PROJECT_DIR$/app/scripts/services/alertService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/localStorageService.js" afterPath="$PROJECT_DIR$/app/scripts/services/localStorageService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/font/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/font/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/font/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/font/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/partials/api/advertiserApp.controller.AdvertiserCtrl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/partials/api/advertiserApp.controller.AdvertisersCtrl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/partials/api/advertiserApp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/js/angular-bootstrap-prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/js/angular-bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/css/animations.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/partials/api/app.advertiserCommonService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/partials/api/app.advertiserEntityFactoryService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/partials/api/app.advertiserRestService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/partials/api/app.alertService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/partials/api/app.localStorageService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/css/doc_widgets.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/js/docs-setup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/css/docs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/js/docs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/font/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/js/google-code-prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/js/marked.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/css/prettify.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="campaings.iws" />
@@ -164,13 +186,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="localStorageService.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="localStorageService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/services/localStorageService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26898733" vertical-offset="0" max-vertical-offset="632">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
               <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1751">
+              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -305,74 +340,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="campaings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campaings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campaings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campaings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campaings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campaings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campaings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campaings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="campaings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -708,7 +675,7 @@
       <workItem from="1450534080606" duration="107000" />
       <workItem from="1450543569811" duration="3075000" />
       <workItem from="1450547872330" duration="2363000" />
-      <workItem from="1450857851613" duration="3262000" />
+      <workItem from="1450857851613" duration="3332000" />
     </task>
     <task id="LOCAL-00001" summary="remove restangular&#10;remove angular-material">
       <created>1450197701879</created>
@@ -1046,11 +1013,17 @@
       <option name="project" value="LOCAL" />
       <updated>1450859995913</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="update js files with ng-docs">
+      <created>1450861166802</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1450861166802</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103991000" />
+    <option name="totallyTimeSpent" value="104061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="0" width="1696" height="1026" extended-state="0" />
@@ -1068,9 +1041,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.281106" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Grunt" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24193548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24193548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20634921" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20634921" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1105,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="update images and readme file&#10;" />
     <MESSAGE value="&#10;added commonConst&#10;added create dtoAdvertiser object&#10;added initLastAdvertiser" />
     <MESSAGE value="allign code" />
     <MESSAGE value="on create new advertiser display the new advertiser with id" />
@@ -1157,7 +1129,8 @@
     <MESSAGE value="add media query for last-advertiser-list" />
     <MESSAGE value="change name from decriptionEditorOptions to descriptionEditorOptions" />
     <MESSAGE value="added grunt  ng-docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added grunt  ng-docs" />
+    <MESSAGE value="update js files with ng-docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="update js files with ng-docs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1372,16 +1345,6 @@
         <state vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="748">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1751">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_advertisers.scss">
@@ -1622,10 +1585,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/localStorageService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26898733" vertical-offset="0" max-vertical-offset="632">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1751">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
