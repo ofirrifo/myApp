@@ -3,10 +3,9 @@
 
   /**
    * @ngdoc function
-   * @name advertiserApp.controller:MainCtrl
+   * @name advertiserApp.controller:AdvertisersCtrl
    * @description
-   * # MainCtrl
-   * Controller of the advertiserApp
+   * Display list of all advertisers
    */
   angular.module('advertiserApp')
     .controller('AdvertisersCtrl', AdvertisersCtrl);

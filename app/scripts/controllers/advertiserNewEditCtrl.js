@@ -6,10 +6,9 @@
 
   /**
    * @ngdoc function
-   * @name advertiserApp.controller:AboutCtrl
+   * @name advertiserApp.controller:AdvertiserCtrl
    * @description
-   * # AboutCtrl
-   * Controller of the advertiserApp
+   * Create and Edit advertiser
    */
   angular.module('advertiserApp')
     .controller('AdvertiserCtrl', AdvertiserCtrl);

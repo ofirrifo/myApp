@@ -19,6 +19,9 @@ module.exports = function (grunt) {
     cdnify: 'grunt-google-cdn'
   });
 
+  grunt.loadNpmTasks('grunt-ngdocs');
+
+
   // Configurable paths for the application
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
@@ -27,6 +30,12 @@ module.exports = function (grunt) {
 
   // Define the configuration for all the tasks
   grunt.initConfig({
+
+    // Create ng-docs
+    ngdocs: {
+      all: ['app/**/*.js']
+    },
+
 
     // Project settings
     yeoman: appConfig,
@@ -167,6 +176,7 @@ module.exports = function (grunt) {
           ]
         }]
       },
+      docs:['docs'],
       server: '.tmp'
     },
 
@@ -491,6 +501,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'clean:docs',
+    'ngdocs',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
