@@ -8,6 +8,7 @@
    * @ngdoc service
    * @name app.localStorageService
    * @description
+   * This service help us with different functionality of browser local storage
    */
   angular.module('advertiserApp')
     .service('localStorageService', localStorageService);

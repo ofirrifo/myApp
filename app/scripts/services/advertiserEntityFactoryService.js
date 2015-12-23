@@ -8,6 +8,7 @@
    * @ngdoc service
    * @name app.advertiserEntityFactoryService
    * @description
+   * This service contain the advertiser constructors in order to crete new advertiser instance
    */
   angular
     .module('advertiserApp')

@@ -8,6 +8,7 @@
    * @ngdoc service
    * @name app.advertiserRestService
    * @description
+   * This service help us with the CRUD action for advertiser
    */
   angular.module('advertiserApp')
     .service('advertiserRestService', advertiserRestService);

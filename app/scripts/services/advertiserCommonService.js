@@ -8,6 +8,7 @@
    * @ngdoc service
    * @name app.advertiserCommonService
    * @description
+   * This service contain the common advertiser functionality
    */
   angular.module('advertiserApp')
     .service('advertiserCommonService', advertiserCommonService);

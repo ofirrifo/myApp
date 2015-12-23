@@ -8,6 +8,8 @@
    * @ngdoc service
    * @name app.alertService
    * @description
+   * 1. This service help us with different type of alerts.
+   * 2. This service use toaster service.
    */
   angular.module('advertiserApp')
     .service('alertService', alertService);
